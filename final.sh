@@ -17,16 +17,12 @@ echo "Installing okular"
 sudo apt-get install okular
 echo "Finish intalling okular"
 echo "installing VS Code"
-sudo apt-get update
-sudo appt install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -0- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update
-sudo apt install code
+sudo apt-get install snapd
+sudo snap install --classic code
 echo "Finish installing VS Code"
 echo "install brackets"
 sudo apt-get install snapd
-sudo snap install brackets
+sudo snap install --classic brackets
 echo "Finish installing brackets"
 echo "Downloading compilers"
 sudo apt install nodejs
