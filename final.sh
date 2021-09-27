@@ -1,13 +1,5 @@
 #!/bin/bash
 echo "Installing all programs on virtual machine"
-echo "Installing Chrome"
-sudo apt update
-sudo apt upgrade
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get install -f
-google-chrome
-echo "finish installing chrome"
 echo "Now installing LibreOffice Writer"
 sudo add-apt-repository ppa:libreoffice
 sudo apt update
